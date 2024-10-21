@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/backgroundColor">
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Currency Converter"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/primaryColor"/>
+
+    <!-- Input Field for Rupees -->
+    <EditText
+        android:id="@+id/etRupees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Amount in Rupees"
+        android:inputType="text"
+        android:backgroundTint="@color/primaryColor"
+        android:padding="12dp"
+        android:textColor="@color/textColor"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Error Message -->
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_light"
+        android:visibility="gone"
+        android:text="Enter only numbers"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Convert Button -->
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:backgroundTint="@color/primaryColor"
+        android:textColor="@color/textColor"
+        android:layout_marginBottom="12dp"
+        android:enabled="false"/>
+
+    <!-- ListView for Conversion Results -->
+    <ListView
+        android:id="@+id/listViewCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Your Name Display -->
+    <TextView
+        android:id="@+id/tvYourName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="G.THARUN REDDY"
+        android:textSize="19sp"
+        android:textColor="@color/primaryColor"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp" />
+</LinearLayout>
